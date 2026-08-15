@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Arif Pharmacy & Medical Store | Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div class="top-bar">🚚 Free Delivery on Orders Above ₹499 &nbsp; | &nbsp; 📞 24/7 Support</div>
+<header><nav>
+<a class="logo premium-logo" href="index.html">
+    <span class="logo-icon">
+        <i class="fa-solid fa-heart-pulse"></i>
+    </span>
+
+    <span class="logo-text">
+        <strong>Arif</strong>
+        <span>Pharmacy & Medical Store</span>
+    </span>
+</a>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a class="" href="medicines.html">Medicines</a></li>
+    <li><a class="" href="about.html">About</a></li>
+    <li><a class="" href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-icons">
+    <a class="cart-wrap" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></a>
+    <a href="#"><i class="fa-regular fa-user"></i></a>
+  </div>
+</nav></header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Better Healthcare.<br><span>Delivered to You.</span></h1>
+    <p>Genuine medicines, healthcare essentials and wellness products from a trusted pharmacy — all in one place.</p>
+    <div class="hero-buttons">
+      <a class="primary-btn" href="medicines.html">Shop Medicines <i class="fa-solid fa-arrow-right"></i></a>
+      <a class="outline-btn" href="about.html">Learn More</a>
+    </div>
+    <div class="hero-search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <input
+        type="text"
+        id="homeSearch"
+        placeholder="Search medicines, healthcare products..."
+    >
+
+    <button
+        type="button"
+        id="homeSearchButton"
+    >
+        Search
+    </button>
+</div>
+  </div>
+  <div class="hero-image"><img src="images/hero-pharmacy.jpg" alt="Modern pharmacy interior"></div>
+</section>
+
+<section class="stats">
+  <div class="stat"><div class="stat-icon"><i class="fa-solid fa-pills"></i></div><div class="stat-number" data-target="500" data-suffix="+">0</div><div class="stat-label">Healthcare Products</div></div>
+  <div class="stat"><div class="stat-icon"><i class="fa-solid fa-users"></i></div><div class="stat-number" data-target="12450" data-suffix="+">0</div><div class="stat-label">Customers Served</div></div>
+  <div class="stat"><div class="stat-icon"><i class="fa-solid fa-truck-medical"></i></div><div class="stat-number">24/7</div><div class="stat-label">Customer Support</div></div>
+  <div class="stat"><div class="stat-icon"><i class="fa-solid fa-heart-pulse"></i></div><div class="stat-number">100%</div><div class="stat-label">Healthcare Focused</div></div>
+</section>
+
+<section class="section"><h2 class="section-title">Shop by Category</h2>
+<div class="category-grid">
+  <div class="category-card"><div class="category-icon"><i class="fa-solid fa-pills"></i></div><h3>Medicines</h3><p>Essential medicines</p><a href="medicines.html">Explore →</a></div>
+  <div class="category-card"><div class="category-icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>Healthcare</h3><p>Healthcare essentials</p><a href="medicines.html">Explore →</a></div>
+  <div class="category-card"><div class="category-icon"><i class="fa-solid fa-pump-soap"></i></div><h3>Personal Care</h3><p>Daily care products</p><a href="medicines.html">Explore →</a></div>
+  <div class="category-card"><div class="category-icon"><i class="fa-solid fa-baby"></i></div><h3>Baby Care</h3><p>Care for little ones</p><a href="medicines.html">Explore →</a></div>
+</div></section>
+
+<section class="section"><h2 class="section-title">Featured Products</h2>
+<div class="product-grid">
+  <div class="product-card"><img src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg" alt="Vitamin Tablets"><h3>Vitamin Tablets</h3><div class="price">₹199</div><button class="add-btn" onclick="addToCart('Vitamin Tablets',199,'https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+  <div class="product-card"><img src="https://images.pexels.com/photos/208512/pexels-photo-208512.jpeg" alt="Pain Relief Tablets"><h3>Pain Relief Tablets</h3><div class="price">₹50</div><button class="add-btn" onclick="addToCart('Pain Relief Tablets',50,'https://images.pexels.com/photos/208512/pexels-photo-208512.jpeg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+  <div class="product-card"><img src="https://images.pexels.com/photos/593451/pexels-photo-593451.jpeg" alt="Cough Syrup"><h3>Cough Syrup</h3><div class="price">₹120</div><button class="add-btn" onclick="addToCart('Cough Syrup',120,'https://images.pexels.com/photos/593451/pexels-photo-593451.jpeg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+  <div class="product-card"><img src="https://images.pexels.com/photos/5699514/pexels-photo-5699514.jpeg" alt="First Aid Kit"><h3>First Aid Kit</h3><div class="price">₹299</div><button class="add-btn" onclick="addToCart('First Aid Kit',299,'https://images.pexels.com/photos/5699514/pexels-photo-5699514.jpeg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+</div><div class="slider-dots">‹ &nbsp; • • • &nbsp; ›</div></section>
+
+<section class="section"><h2 class="section-title">Why Choose MediCare+</h2>
+<div class="why-grid">
+<div class="why-card"><i class="fa-solid fa-shield-heart"></i><h3>100% Genuine</h3><p>All products are authentic and safe.</p></div>
+<div class="why-card"><i class="fa-solid fa-truck-fast"></i><h3>Fast Delivery</h3><p>Quick and reliable delivery to your door.</p></div>
+<div class="why-card"><i class="fa-solid fa-headset"></i><h3>24/7 Support</h3><p>We are always here to help you.</p></div>
+<div class="why-card"><i class="fa-solid fa-lock"></i><h3>Secure Payment</h3><p>Your payments are safe and protected.</p></div>
+</div></section>
+
+<section class="section"><h2 class="section-title">What Our Customers Say</h2>
+<div class="review-grid">
+<div class="review"><div class="quote">“</div><div class="stars">★★★★★</div><p>The website is very easy to use. I found the medicines I needed quickly and the delivery was on time.</p><div class="reviewer"><div class="avatar">AK</div><div><strong>Arun Kumar</strong><small>Chennai</small></div></div></div>
+<div class="review"><div class="quote">“</div><div class="stars">★★★★★</div><p>Genuine products, good packaging and fast delivery. Highly recommend MediCare+.</p><div class="reviewer"><div class="avatar">PS</div><div><strong>Priya S</strong><small>Bangalore</small></div></div></div>
+<div class="review"><div class="quote">“</div><div class="stars">★★★★★</div><p>A convenient pharmacy experience with a professional and clean interface.</p><div class="reviewer"><div class="avatar">RM</div><div><strong>Rahul M</strong><small>Coimbatore</small></div></div></div>
+</div></section>
+</main>
+
+<div class="newsletter">
+  <div class="newsletter-copy">
+    <div class="newsletter-icon"><i class="fa-regular fa-envelope"></i></div>
+    <div><h3>Get Health Tips & Offers</h3><p>Subscribe to our newsletter and get useful healthcare updates.</p></div>
+  </div>
+  <form class="newsletter-form" onsubmit="event.preventDefault();showToast('Subscribed successfully ✓')">
+    <input type="email" required placeholder="Enter your email">
+    <button>Subscribe</button>
+  </form>
+</div>
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+<div class="footer-logo">
+    <span class="footer-logo-mark">
+        <i class="fa-solid fa-heart-pulse"></i>
+    </span>
+
+    <span>
+        <strong>ARIF</strong>
+        <small>PHARMACY &amp; MEDICAL STORE</small>
+    </span>
+</div>
+      <p>Your trusted online pharmacy for genuine medicines, healthcare products and wellness essentials.</p>
+      <div class="social-title">Follow Us</div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a><a href="medicines.html">Medicines</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-column">
+      <h3>Customer Service</h3>
+      <a href="medicines.html">Healthcare Products</a><a href="cart.html">My Cart</a><a href="contact.html">Help & Support</a><a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <div class="contact-line"><i class="fa-solid fa-location-dot"></i>Kurnool, Andhra Pradesh</div>
+      <div class="contact-line"><i class="fa-solid fa-phone"></i>+91 98765 43210</div>
+      <div class="contact-line"><i class="fa-solid fa-envelope"></i>support@medicareplus.com</div>
+      <div class="contact-line"><i class="fa-solid fa-clock"></i>24/7 Customer Support</div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="year">2026</span> MediCare+. All Rights Reserved.</span><span>Designed for a better healthcare experience.</span></div>
+</footer>
+<div id="toast" class="toast"></div>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const counters = document.querySelectorAll(".stat-number[data-target]");
+
+  const animateCounter = (el) => {
+    if (el.dataset.animated === "true") return;
+
+    el.dataset.animated = "true";
+
+    const target = Number(el.dataset.target);
+    const suffix = el.dataset.suffix || "";
+    const duration = 1600;
+    const startTime = performance.now();
+
+    function updateCounter(currentTime) {
+      const progress = Math.min(
+        (currentTime - startTime) / duration,
+        1
+      );
+
+      // Smooth ease-out animation
+      const eased = 1 - Math.pow(1 - progress, 4);
+      const value = Math.floor(target * eased);
+
+      el.textContent =
+        value.toLocaleString("en-IN") + suffix;
+
+      if (progress < 1) {
+        requestAnimationFrame(updateCounter);
+      } else {
+        el.textContent =
+          target.toLocaleString("en-IN") + suffix;
+      }
+    }
+
+    requestAnimationFrame(updateCounter);
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          counters.forEach(animateCounter);
+          observer.disconnect();
+        }
+      });
+    },
+    {
+      threshold: 0.35
+    }
+  );
+
+  const statsSection = document.querySelector(".stats");
+
+  if (statsSection) {
+    observer.observe(statsSection);
+  }
+
+});
+</script>

@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Arif Pharmacy & Medical Store | Medicines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div class="top-bar">🚚 Free Delivery on Orders Above ₹499 &nbsp; | &nbsp; 📞 24/7 Support</div>
+<header><nav>
+  <a class="logo premium-logo" href="index.html">
+    <span class="logo-icon">
+        <i class="fa-solid fa-heart-pulse"></i>
+    </span>
+
+    <span class="logo-text">
+        <strong>Arif</strong>
+        <span>Pharmacy & Medical Store</span>
+    </span>
+</a>
+  <ul>
+    <li><a class="" href="index.html">Home</a></li>
+    <li><a class="active" href="medicines.html">Medicines</a></li>
+    <li><a class="" href="about.html">About</a></li>
+    <li><a class="" href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-icons">
+    <a class="cart-wrap" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></a>
+    <a href="#"><i class="fa-regular fa-user"></i></a>
+  </div>
+</nav></header>
+
+
+<section class="medicine-header"><h1>Medicines & Healthcare Products</h1><p>Find genuine medicines from trusted brands</p>
+<div class="medicine-search"><input id="medicineSearch" type="text" placeholder="Search medicines..." oninput="searchMedicine()"><button onclick="searchMedicine()"><i class="fa-solid fa-magnifying-glass"></i> Search</button></div></section>
+<section class="medicine-category"><h2 class="section-title">Browse Categories</h2><div class="category-buttons"><button>All</button><button>Tablet</button><button>Syrup</button><button>Healthcare</button><button>Personal Care</button></div></section>
+<section class="section"><h2 class="section-title">All Medicines</h2><div class="product-grid">
+<div class="product-card"><img src="https://5.imimg.com/data5/SELLER/Default/2023/6/313916456/JJ/UT/KU/129748724/dolo-650-tablets-1000x1000.jpeg" alt="Dolo 650" loading="lazy"><h3>Dolo 650</h3><div class="price">₹30</div><button class="add-btn" onclick="addToCart('Dolo 650',30,'https://5.imimg.com/data5/SELLER/Default/2023/6/313916456/JJ/UT/KU/129748724/dolo-650-tablets-1000x1000.jpeg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://tiimg.tistatic.com/fp/1/005/571/crocin-tablet-138.jpg" alt="Crocin Advance 500mg" loading="lazy"><h3>Crocin Advance 500mg</h3><div class="price">₹35</div><button class="add-btn" onclick="addToCart('Crocin Advance 500mg',35,'https://tiimg.tistatic.com/fp/1/005/571/crocin-tablet-138.jpg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://www.rndlaboratories.com/images/laboratories_products/cetlong-tab.png" alt="Cetirizine 10mg Tablets" loading="lazy"><h3>Cetirizine 10mg Tablets</h3><div class="price">₹45</div><button class="add-btn" onclick="addToCart('Cetirizine 10mg Tablets',45,'https://www.rndlaboratories.com/images/laboratories_products/cetlong-tab.png')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://tiimg.tistatic.com/fp/5/007/867/essential-nutrient-and-energy-level-boosting-vitamin-c-tablets-500-mg-094.jpg" alt="Vitamin C Tablets" loading="lazy"><h3>Vitamin C Tablets</h3><div class="price">₹199</div><button class="add-btn" onclick="addToCart('Vitamin C Tablets',199,'https://tiimg.tistatic.com/fp/5/007/867/essential-nutrient-and-energy-level-boosting-vitamin-c-tablets-500-mg-094.jpg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://static.oxinis.com/healthmug/image/product/465436-8-800.webp" alt="Multivitamin Tablets" loading="lazy"><h3>Multivitamin Tablets</h3><div class="price">₹249</div><button class="add-btn" onclick="addToCart('Multivitamin Tablets',249,'https://static.oxinis.com/healthmug/image/product/465436-8-800.webp')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://inlifehealthcare.com/cdn/shop/files/Inlife-Calcium-VitaminD3-Front-Bottle.Image.webp?v=1766119457&width=800" alt="Calcium + D3 Tablets" loading="lazy"><h3>Calcium + D3 Tablets</h3><div class="price">₹179</div><button class="add-btn" onclick="addToCart('Calcium + D3 Tablets',179,'https://onemg.gumlet.io/l_watermark_346%2Cw_480%2Ch_480/a_ignore%2Cw_480%2Ch_480%2Cc_fit%2Cq_auto%2Cf_auto/pharmacy-production-rxs%2F1739513083_crop_270.png')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://cdn2.nutrabay.com/uploads/product/featured_image/product-1123-featured_image-Vlado%E2%80%99s_Himalayan_Organics_B_Complex_Supplement__Support_Cognitive_Health.jpg" alt="B-Complex Tablets" loading="lazy"><h3>B-Complex Tablets</h3><div class="price">₹129</div><button class="add-btn" onclick="addToCart('B-Complex Tablets',129,'https://cdn2.nutrabay.com/uploads/product/featured_image/product-1123-featured_image-Vlado%E2%80%99s_Himalayan_Organics_B_Complex_Supplement__Support_Cognitive_Health.jpg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://store.planetayurveda.com/cdn/shop/files/Untitleddesign_42_20efff35-5fad-4c21-a676-b17f7ec994ec.png?v=1732011539" alt="Zinc Tablets" loading="lazy"><h3>Zinc Tablets</h3><div class="price">₹149</div><button class="add-btn" onclick="addToCart('Zinc Tablets',149,'https://store.planetayurveda.com/cdn/shop/files/Untitleddesign_42_20efff35-5fad-4c21-a676-b17f7ec994ec.png?v=1732011539')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://newassets.apollo247.com/pub/media/catalog/product/p/a/par0083_1_feb23.jpg" alt="Paracetamol 500mg" loading="lazy"><h3>Paracetamol 500mg</h3><div class="price">₹55</div><button class="add-btn" onclick="addToCart('Paracetamol 500mg',55,'https://newassets.apollo247.com/pub/media/catalog/product/p/a/par0083_1_feb23.jpg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://wowrxpharmacy.com/wp-content/uploads/brufen-with-pill-600x600.png" alt="Ibuprofen Tablets" loading="lazy"><h3>Ibuprofen Tablets</h3><div class="price">₹75</div><button class="add-btn" onclick="addToCart('Ibuprofen Tablets',75,'https://wowrxpharmacy.com/wp-content/uploads/brufen-with-pill-600x600.png')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://1bpharmacy.com/_next/image?q=75&url=https%3A%2F%2Fcdn-1bharatpharmacy.s3.ap-south-1.amazonaws.com%2Fproduct%2F1765527841409-7qebnsd.avif&w=1920" alt="Pain Relief Tablets" loading="lazy"><h3>Pain Relief Tablets</h3><div class="price">₹50</div><button class="add-btn" onclick="addToCart('Pain Relief Tablets',50,'https://1bpharmacy.com/_next/image?q=75&url=https%3A%2F%2Fcdn-1bharatpharmacy.s3.ap-south-1.amazonaws.com%2Fproduct%2F1765527841409-7qebnsd.avif&w=1920')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://api.chemist180.com/api/media/image-resize/?name=DIGENE_ORANGE_TABLET_chemist180.jpg&path=Product+Images%2F" alt="Antacid Tablets" loading="lazy"><h3>Antacid Tablets</h3><div class="price">₹85</div><button class="add-btn" onclick="addToCart('Antacid Tablets',85,'https://api.chemist180.com/api/media/image-resize/?name=DIGENE_ORANGE_TABLET_chemist180.jpg&path=Product+Images%2F')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://cdn.pixelbin.io/v2/plain-cake-860195/netmed/wrkr/products/assets/item/free/original/r3Bi6SUHci-alergin_tablet_10s_761357_0_0.jpg" alt="Allergy Relief Tablets" loading="lazy"><h3>Allergy Relief Tablets</h3><div class="price">₹65</div><button class="add-btn" onclick="addToCart('Allergy Relief Tablets',65,'https://cdn.pixelbin.io/v2/plain-cake-860195/netmed/wrkr/products/assets/item/free/original/r3Bi6SUHci-alergin_tablet_10s_761357_0_0.jpg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://tse1.mm.bing.net/th/id/OIP.Sq40Ez3vvfkCvYU97Y7WXgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3?im=Resize%3D%281000%2C1000%29" alt="Cough Syrup" loading="lazy"><h3>Cough Syrup</h3><div class="price">₹120</div><button class="add-btn" onclick="addToCart('Cough Syrup',120,'https://tse1.mm.bing.net/th/id/OIP.Sq40Ez3vvfkCvYU97Y7WXgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3?im=Resize%3D%281000%2C1000%29')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://cdn.pixelbin.io/v2/plain-cake-860195/netmed/wrkr/products/assets/item/free/original/KYM-CSri4e-mucodil_expectorant_100ml_517099_3_0.jpg" alt="Expectorant Syrup" loading="lazy"><h3>Expectorant Syrup</h3><div class="price">₹145</div><button class="add-btn" onclick="addToCart('Expectorant Syrup',145,'https://cdn.pixelbin.io/v2/plain-cake-860195/netmed/wrkr/products/assets/item/free/original/KYM-CSri4e-mucodil_expectorant_100ml_517099_3_0.jpg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://meds.myupchar.com/145908/1.jpg" alt="Kids Cough Syrup" loading="lazy"><h3>Kids Cough Syrup</h3><div class="price">₹110</div><button class="add-btn" onclick="addToCart('Kids Cough Syrup',110,'https://meds.myupchar.com/145908/1.jpg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://www.bbassets.com/media/uploads/p/xl/40302931_1-dipya-syrup-ayurvedic-digestive-care.jpg" alt="Digestive Syrup" loading="lazy"><h3>Digestive Syrup</h3><div class="price">₹135</div><button class="add-btn" onclick="addToCart('Digestive Syrup',135,'https://www.bbassets.com/media/uploads/p/xl/40302931_1-dipya-syrup-ayurvedic-digestive-care.jpg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://ik.imagekit.io/wlfr/wellness/images/products/213333-1.webp" alt="Volini Pain Relief Gel" loading="lazy"><h3>Volini Pain Relief Gel</h3><div class="price">₹156</div><button class="add-btn" onclick="addToCart('Volini Pain Relief Gel',156,'https://ik.imagekit.io/wlfr/wellness/images/products/213333-1.webp')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://www.bestomart.com/cdn/shop/files/1000006770-2_1024x1024.jpg?v=1690001043" alt="First Aid Kit" loading="lazy"><h3>First Aid Kit</h3><div class="price">₹299</div><button class="add-btn" onclick="addToCart('First Aid Kit',299,'https://www.bestomart.com/cdn/shop/files/1000006770-2_1024x1024.jpg?v=1690001043')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+<div class="product-card"><img src="https://i.ebayimg.com/images/g/Yb8AAeSw6IJpue8s/s-l1200.jpg" alt="First Aid Essentials Kit" loading="lazy"><h3>First Aid Essentials Kit</h3><div class="price">₹349</div><button class="add-btn" onclick="addToCart('First Aid Essentials Kit',349,'https://i.ebayimg.com/images/g/Yb8AAeSw6IJpue8s/s-l1200.jpg')"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button></div>
+</div></section>
+
+<div class="newsletter">
+  <div class="newsletter-copy">
+    <div class="newsletter-icon"><i class="fa-regular fa-envelope"></i></div>
+    <div><h3>Get Health Tips & Offers</h3><p>Subscribe to our newsletter and get useful healthcare updates.</p></div>
+  </div>
+  <form class="newsletter-form" onsubmit="event.preventDefault();showToast('Subscribed successfully ✓')">
+    <input type="email" required placeholder="Enter your email">
+    <button>Subscribe</button>
+  </form>
+</div>
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+     <div class="footer-logo">
+    <span class="footer-logo-mark">
+        <i class="fa-solid fa-heart-pulse"></i>
+    </span>
+
+    <span>
+        <strong>ARIF</strong>
+        <small>PHARMACY &amp; MEDICAL STORE</small>
+    </span>
+</div>
+      <p>Your trusted online pharmacy for genuine medicines, healthcare products and wellness essentials.</p>
+      <div class="social-title">Follow Us</div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a><a href="medicines.html">Medicines</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-column">
+      <h3>Customer Service</h3>
+      <a href="medicines.html">Healthcare Products</a><a href="cart.html">My Cart</a><a href="contact.html">Help & Support</a><a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <div class="contact-line"><i class="fa-solid fa-location-dot"></i>Kurnool, Andhra Pradesh</div>
+      <div class="contact-line"><i class="fa-solid fa-phone"></i>+91 98765 43210</div>
+      <div class="contact-line"><i class="fa-solid fa-envelope"></i>support@medicareplus.com</div>
+      <div class="contact-line"><i class="fa-solid fa-clock"></i>24/7 Customer Support</div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="year">2026</span> MediCare+. All Rights Reserved.</span><span>Designed for a better healthcare experience.</span></div>
+</footer>
+<div id="toast" class="toast"></div>
+<script src="js/script.js"></script></body></html>

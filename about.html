@@ -1,0 +1,306 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Arif Pharmacy & Medical Store | About</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.about-hero{max-width:1180px;margin:55px auto 70px;padding:0 28px;display:grid;grid-template-columns:1fr 1.02fr;gap:58px;align-items:center}
+.about-copy{position:relative}
+.about-eyebrow{display:inline-flex;align-items:center;gap:9px;padding:9px 15px;border-radius:999px;background:#e9f8f6;color:#087f78;font-size:13px;font-weight:700;margin-bottom:18px}
+.about-copy h1{margin:0 0 17px;color:#123c53;font-size:48px;line-height:1.12;font-weight:800;letter-spacing:-1.2px}
+.about-copy h1 span{color:#078d84}
+.about-lead{font-size:21px!important;line-height:1.55!important;color:#244e63!important;font-weight:600;margin-bottom:13px!important}
+.about-copy p{color:#647989;font-size:16px;line-height:1.8;margin:0 0 18px}
+.about-highlights{display:grid;gap:12px;margin:25px 0 27px}
+.about-highlights>div{display:flex;align-items:center;gap:13px}
+.about-highlights>div>i{width:38px;height:38px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#e9f8f6;color:#078d84;flex:none}
+.about-highlights span{display:flex;flex-direction:column;gap:2px}
+.about-highlights strong{color:#173e53;font-size:14px}.about-highlights small{color:#718492;font-size:12px}
+.about-gallery{min-height:535px;position:relative}
+.about-photo{position:absolute;overflow:hidden;border-radius:28px;background:#fff;box-shadow:0 22px 55px rgba(16,64,82,.16);border:7px solid rgba(255,255,255,.92)}
+.about-photo img{width:100%;height:100%;display:block;object-fit:cover}
+.photo-main{width:83%;height:410px;top:15px;left:0}
+.photo-secondary{width:57%;height:285px;right:0;bottom:0;border-width:6px}
+.photo-badge{position:absolute;left:20px;bottom:20px;display:flex;align-items:center;gap:11px;padding:12px 16px;border-radius:16px;background:rgba(255,255,255,.94);box-shadow:0 10px 30px rgba(12,55,70,.16);backdrop-filter:blur(8px)}
+.photo-badge>i{width:37px;height:37px;border-radius:11px;background:#078d84;color:#fff;display:flex;align-items:center;justify-content:center}
+.photo-badge span{display:flex;flex-direction:column;gap:2px}.photo-badge strong{font-size:13px;color:#173e53}.photo-badge small{font-size:11px;color:#718492}
+.mini-label{position:absolute;left:16px;top:16px;padding:8px 12px;border-radius:999px;background:rgba(7,141,132,.94);color:#fff;font-size:11px;font-weight:700}
+.mission{max-width:1180px;margin:0 auto 60px;padding:0 28px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.mission-card{padding:31px;border:1px solid #e5eef1;border-radius:22px;background:linear-gradient(145deg,#fff,#f7fcfc);box-shadow:0 14px 35px rgba(15,65,80,.07)}
+.mission-card>i{width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:#e9f8f6;color:#078d84;font-size:21px}
+.mission-card h2{color:#173e53;font-size:22px;margin:17px 0 8px}.mission-card p{color:#687d8a;line-height:1.7;margin:0;font-size:14px}
+@media(max-width:900px){.about-hero{grid-template-columns:1fr;gap:30px;margin-top:35px}.about-copy h1{font-size:40px}.about-gallery{min-height:500px}}
+@media(max-width:600px){.about-hero{padding:0 18px}.about-copy h1{font-size:34px}.about-lead{font-size:18px!important}.about-gallery{min-height:430px}.photo-main{height:330px;width:88%}.photo-secondary{height:220px;width:58%}.mission{grid-template-columns:1fr;padding:0 18px}}
+</style>
+
+<style>
+/* Updated About hero: original pharmacy image on the right */
+.about-single-image{
+  position:relative;
+  height:500px;
+  border-radius:30px;
+  overflow:hidden;
+  background:#fff;
+  border:7px solid rgba(255,255,255,.95);
+  box-shadow:0 24px 60px rgba(16,64,82,.18);
+}
+.about-single-image img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+.about-image-badge{
+  position:absolute;
+  left:24px;
+  bottom:24px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:13px 17px;
+  border-radius:17px;
+  background:rgba(255,255,255,.95);
+  box-shadow:0 12px 30px rgba(12,55,70,.18);
+  backdrop-filter:blur(8px);
+}
+.about-image-badge>i{
+  width:40px;height:40px;
+  border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  background:#078d84;color:#fff;
+}
+.about-image-badge span{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+.about-image-badge strong{font-size:13px;color:#173e53}
+.about-image-badge small{font-size:11px;color:#718492}
+
+/* Two professional photos after Mission & Vision */
+.about-photo-showcase{
+  max-width:1180px;
+  margin:0 auto 75px;
+  padding:0 28px;
+}
+.showcase-heading{text-align:center;margin-bottom:28px}
+.showcase-heading>span{
+  color:#078d84;
+  font-size:12px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+}
+.showcase-heading h2{
+  margin:8px 0 8px;
+  color:#123c53;
+  font-size:32px;
+  line-height:1.2;
+  font-weight:800;
+}
+.showcase-heading h2 em{
+  color:#078d84;
+  font-style:normal;
+}
+.showcase-heading p{
+  max-width:650px;
+  margin:auto;
+  color:#718492;
+  font-size:14px;
+  line-height:1.7;
+}
+.showcase-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+.showcase-card{
+  height:330px;
+  position:relative;
+  overflow:hidden;
+  border-radius:24px;
+  background:#fff;
+  border:6px solid #fff;
+  box-shadow:0 18px 45px rgba(16,64,82,.13);
+}
+.showcase-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .55s ease;
+}
+.showcase-card:hover img{transform:scale(1.045)}
+.showcase-card:after{
+  content:"";
+  position:absolute;
+  inset:35% 0 0;
+  background:linear-gradient(transparent,rgba(5,37,48,.78));
+  pointer-events:none;
+}
+.showcase-overlay{
+  position:absolute;
+  z-index:2;
+  left:22px;
+  right:22px;
+  bottom:20px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:#fff;
+}
+.showcase-overlay>i{
+  width:43px;height:43px;
+  flex:none;
+  border-radius:13px;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(7,141,132,.95);
+}
+.showcase-overlay div{display:flex;flex-direction:column;gap:2px}
+.showcase-overlay strong{font-size:15px}
+.showcase-overlay small{font-size:11px;opacity:.9}
+
+@media(max-width:900px){
+  .about-hero{grid-template-columns:1fr;gap:30px}
+  .about-single-image{height:430px}
+}
+@media(max-width:650px){
+  .about-single-image{height:350px;border-radius:22px}
+  .showcase-grid{grid-template-columns:1fr}
+  .showcase-card{height:280px}
+  .about-photo-showcase{padding:0 18px}
+}
+</style>
+</head><body>
+<div class="top-bar">🚚 Free Delivery on Orders Above ₹499 &nbsp; | &nbsp; 📞 24/7 Support</div>
+<header><nav>
+ <a class="logo premium-logo" href="index.html">
+    <span class="logo-icon">
+        <i class="fa-solid fa-heart-pulse"></i>
+    </span>
+
+    <span class="logo-text">
+        <strong>Arif</strong>
+        <span>Pharmacy & Medical Store</span>
+    </span>
+</a>
+  <ul>
+    <li><a class="" href="index.html">Home</a></li>
+    <li><a class="" href="medicines.html">Medicines</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a class="" href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-icons">
+    <a class="cart-wrap" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></a>
+    <a href="#"><i class="fa-regular fa-user"></i></a>
+  </div>
+</nav></header>
+
+<section class="about-hero">
+  <div class="about-copy">
+    <span class="about-eyebrow"><i class="fa-solid fa-shield-heart"></i> Trusted Healthcare Partner</span>
+    <h1>About <span>Arif Pharmacy</span></h1>
+    <p class="about-lead">Healthcare made simpler, safer and more convenient for you and your family.</p>
+    <p>Arif Pharmacy brings medicines, healthcare essentials and wellness products together in one reliable online pharmacy experience. We focus on genuine products, easy ordering, clear information and dependable customer support.</p>
+
+    <div class="about-highlights">
+      <div><i class="fa-solid fa-circle-check"></i><span><strong>Genuine Products</strong><small>Carefully selected healthcare essentials</small></span></div>
+      <div><i class="fa-solid fa-truck-fast"></i><span><strong>Reliable Service</strong><small>Convenient ordering and delivery</small></span></div>
+      <div><i class="fa-solid fa-headset"></i><span><strong>Customer Support</strong><small>Here when you need us</small></span></div>
+    </div>
+
+    <a href="medicines.html" class="primary-btn">Explore Medicines <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
+  <div class="about-single-image">
+    <img src="images/img2.jpeg" alt="Modern Arif Pharmacy store">
+    <div class="about-image-badge">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <span><strong>Care First</strong><small>Trusted pharmacy & medical store</small></span>
+    </div>
+  </div>
+</section>
+<section class="mission"><div class="mission-card"><i class="fa-solid fa-bullseye"></i><h2>Our Mission</h2><p>To provide safe, authentic and affordable healthcare products with a smooth shopping experience and reliable service.</p></div>
+<div class="mission-card"><i class="fa-solid fa-eye"></i><h2>Our Vision</h2><p>To become a trusted digital healthcare partner for families by making essential healthcare easier to access.</p></div></section>
+<section class="about-photo-showcase">
+  <div class="showcase-heading">
+    <span>Our Healthcare Promise</span>
+    <h2>Professional Care, <em>Every Step</em></h2>
+    <p>We combine trusted healthcare products with a simple, comfortable and dependable pharmacy experience.</p>
+  </div>
+
+  <div class="showcase-grid">
+    <div class="showcase-card">
+      <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=1400&q=85" alt="Healthcare and medicines">
+      <div class="showcase-overlay">
+        <i class="fa-solid fa-pills"></i>
+        <div><strong>Healthcare Essentials</strong><small>Everything you need, in one place</small></div>
+      </div>
+    </div>
+
+    <div class="showcase-card">
+      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=85" alt="Professional healthcare service">
+      <div class="showcase-overlay">
+        <i class="fa-solid fa-user-doctor"></i>
+        <div><strong>Trusted Healthcare</strong><small>Service designed around your needs</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="newsletter">
+  <div class="newsletter-copy">
+    <div class="newsletter-icon"><i class="fa-regular fa-envelope"></i></div>
+    <div><h3>Get Health Tips & Offers</h3><p>Subscribe to our newsletter and get useful healthcare updates.</p></div>
+  </div>
+  <form class="newsletter-form" onsubmit="event.preventDefault();showToast('Subscribed successfully ✓')">
+    <input type="email" required placeholder="Enter your email">
+    <button>Subscribe</button>
+  </form>
+</div>
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+    <div class="footer-logo">
+    <span class="footer-logo-mark">
+        <i class="fa-solid fa-heart-pulse"></i>
+    </span>
+
+    <span>
+        <strong>ARIF</strong>
+        <small>PHARMACY &amp; MEDICAL STORE</small>
+    </span>
+</div>
+      <p>Your trusted online pharmacy for genuine medicines, healthcare products and wellness essentials.</p>
+      <div class="social-title">Follow Us</div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a><a href="medicines.html">Medicines</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-column">
+      <h3>Customer Service</h3>
+      <a href="medicines.html">Healthcare Products</a><a href="cart.html">My Cart</a><a href="contact.html">Help & Support</a><a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <div class="contact-line"><i class="fa-solid fa-location-dot"></i>Kurnool, Andhra Pradesh</div>
+      <div class="contact-line"><i class="fa-solid fa-phone"></i>+91 98765 43210</div>
+      <div class="contact-line"><i class="fa-solid fa-envelope"></i>support@medicareplus.com</div>
+      <div class="contact-line"><i class="fa-solid fa-clock"></i>24/7 Customer Support</div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="year">2026</span> Arif Pharmacy. All Rights Reserved.</span><span>Designed for a better healthcare experience.</span></div>
+</footer>
+<div id="toast" class="toast"></div>
+<script src="js/script.js"></script></body></html>
